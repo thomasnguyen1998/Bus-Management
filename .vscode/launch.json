@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\Example.js"
+            "program": "${workspaceFolder}\\nodejs_express_bai5.js"
         }
     ]
 }
