@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create New User</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+    <style>
+    #main{
+        margin: 0 30%;
+    }
+    form{
+        margin-top: 50px;
+    }
+    #input_rfid{
+        display: inline-block;
+        margin: auto;
+        width: 120px;
+        
+    }
+    #input_user{
+        margin: auto;
+        display: inline-block;
+        width: 120px;
+    }
+    #input_money{
+        margin: auto;
+        display: inline-block;
+        width: 120px;
+    }
+    #sign_up{
+        margin: auto;
+        width: 200px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        
+    }
+    #button{
+        margin: auto;
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+    <div id = 'main'>
+        <img src = "https://hcmute.edu.vn/Resources/Images/SubDomain/HomePage/Nut/logo-news.png">
+        <br>
+        <div>
+            <u><h1 id = 'sign_up'>Sign Up</h1></u>
+        </div>
+        <form action="/create" method="post" >
+            <div id = 'input_user'>
+                <label for="user_name">USER:</label>
+            </div>
+            <input type="text" name = "user_name" class= "w3-margin-top">
+            <br>
+            
+            <div id = 'input_rfid'>
+                <label for="rfid" >ID:</label>
+            </div>
+            <input type="text" name = 'rfid' class= "w3-margin-top">
+            <br>
+
+            <div id = 'input_money'>
+                <label for="money">MONEY:</label>
+            </div>
+            <input type="text" name = 'money' class= "w3-margin-top">
+            <br>
+            <br>
+            <div id = "button">
+                <input type = "submit" value = "Send Data">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+table
+    tr
+        th ID
+        th USER_NAME
+        th RFID
+        th MONEY
+        th DETAIL
+    each item in list
+        tr
+            td= item.ID
+            td= item.USER_NAME
+            td= item.RFID
+            td= item.MONEY
+            td
+                a(href='/customer/'+ item.ID) DETAIL

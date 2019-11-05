@@ -1,0 +1,19 @@
+html
+    head   
+        title BUS_PAYMENT
+        style
+            include style.css
+    body
+        include ./header.pug
+        form(action = '/update/customer/' + customer.ID,method = "post")
+            h2= customer.USER_NAME
+            div ID:
+                span= customer.ID
+            div RFID:
+
+                input(name = "RFID" value = customer.RFID)
+            div MONEY:
+                input(name = "MONEY" value = customer.MONEY)
+            div
+                button(type = "submit") UPDATE
+        include ./footer.pug
