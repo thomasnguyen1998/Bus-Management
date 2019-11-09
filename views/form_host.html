@@ -8,42 +8,52 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    
     <style>
-    #main{
-        margin: 0 30%;
+    *{
+        padding: 0;
+        margin: 0;
     }
-    form{
-        margin-top: 50px;
-    }
-    #title{
+    .title{
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
-        
-        margin: auto;
-        width: 80%;
-    }
-    body{
-        /*background-image: url("https://www.jqueryscript.net/images/jQuery-Plugin-To-Resize-Background-Image-To-Fit-Screen.jpg");
-        background-repeat: no-repeat;*/
-        
-        background-color:aqua ;
         width: 100%;
+        margin: 0;
+        text-align: center;
+        display: block;
+    }
+    a, a:link, a:visited{
+        text-decoration: none;
     }
 </style>
 </head>
 <body>
-    <div id = 'main'>
-        <img src = "https://hcmute.edu.vn/Resources/Images/SubDomain/HomePage/Nut/logo-news.png">
-        <br>
-        <br>
-        <h1 id = 'title'>BUS PAYMENT SYSTEM</h1>
-        <br>
-        <div class="w3-bar w3-gray">
-            <a href = "http://localhost:8080/create" class="w3-bar-item w3-button">
-                Sign Up
+    <!--Đưa sang file head.bug-->
+    <div class="w3-container w3-center">
+            <a href="./">
+                <img src = "https://hcmute.edu.vn/Resources/Images/SubDomain/HomePage/Nut/logo-news.png">
             </a>
-            <a href = "http://localhost:8080/table" class="w3-button">
-                Customer's Information
-            </a>
+    </div>
+    <hr/>
+    <div >&nbsp;</div>
+    <!---->
+    <div class="w3-row">        
+        <div  class="w3-col s0 m2 l3">&nbsp;</div>
+        <div id='main' class="w3-col s12 m8 l6 w3-card-4 w3-margin w3-round-xlarge">
+            <div class="w3-container w3-teal w3-round-large">
+                <h1 class="title">BUS PAYMENT SYSTEM</h1>
+            </div>
+            <div class="w3-row w3-padding-24">
+                <div class="w3-col l1">&nbsp;</div>
+                <a href = "/create" class="w3-button w3-col l4 w3-hover-green w3-center w3-round-large w3-border w3-border-green">
+                    Sign Up
+                </a>
+                <div class="w3-col l2">&nbsp;</div>
+                <a class="w3-button w3-col l4 w3-hover-blue w3-center w3-round-large w3-border w3-border-blue " 
+                href = "/table">
+                    Customer's Information
+                </a>    
+            </div>
+            
+        </div>  
     </div>
 </body>
 </html>
