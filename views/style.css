@@ -6,3 +6,20 @@ table, th, td {
 table{
     width: 100%;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+a, a:link, a:visited{
+    text-decoration: none;
+}
