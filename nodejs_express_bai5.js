@@ -106,5 +106,12 @@ app.post('/update/customer/:id', function(req, res) {
       });
 });
 
+app.get('/table/delete/:id', function(req, res) {
+    con.query("DELETE FROM customer where ID=" + req.params.id, function(err, result, fields) {
+        if (err) console.log(err);
+        res.sendFile('delete.html', {root:'views'});
+    });
+});
+
 
 app.listen(8080);//, "10.0.134.206"

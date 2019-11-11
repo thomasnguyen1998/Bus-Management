@@ -6,73 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create New User</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
-    <style>
-    #main{
-        margin: 0 30%;
-    }
-    form{
-        margin-top: 50px;
-    }
-    #input_rfid{
-        display: inline-block;
-        margin: auto;
-        width: 120px;
-        
-    }
-    #input_user{
-        margin: auto;
-        display: inline-block;
-        width: 120px;
-    }
-    #input_money{
-        margin: auto;
-        display: inline-block;
-        width: 120px;
-    }
-    #sign_up{
-        margin: auto;
-        width: 200px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        
-    }
-    #button{
-        margin: auto;
-        width: 200px;
-    }
-</style>
 </head>
 <body>
-    <div id = 'main'>
-        <img src = "https://hcmute.edu.vn/Resources/Images/SubDomain/HomePage/Nut/logo-news.png">
-        <br>
-        <div>
-            <u><h1 id = 'sign_up'>Sign Up</h1></u>
+    <!--Đưa sang file head.bug-->
+    <div class="w3-container w3-center">
+            <a href="./">
+                <img src = "https://hcmute.edu.vn/Resources/Images/SubDomain/HomePage/Nut/logo-news.png">
+            </a>
+    </div>
+    <hr/>
+    <div >&nbsp;</div>
+    <!---->
+    <div class="w3-row">        
+        <div  class="w3-col s0 m2 l3">&nbsp;</div>
+        <div id='main' class="w3-col s12 m8 l6">            
+            <div class="w3-card-4 w3-padding-bottom w3-round-xlarge">
+                <div class="w3-container w3-teal w3-round-large">
+                    <h1 class="title">Create new user</h1>
+                </div>
+                <form action="/create" method="post" class="w3-container w3-margin">
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user w3-text-teal"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" name="user_name" type="text" placeholder="User Name">
+                        </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-id-card w3-text-teal"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" name="rfid" type="text" placeholder="RFID card number">
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-money w3-text-teal"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" name="money" type="text" placeholder="Money">
+                        </div>
+                    </div>
+                    <b>
+                    <input type = "submit" value = "Send Data"
+                    class="w3-btn w3-border w3-border-teal w3-hover-teal w3-margin-bottom w3-round-medium w3-text-teal w3-hover-text-white">
+                    </b>
+                </form>
+            </div>
         </div>
-        <form action="/create" method="post" >
-            <div id = 'input_user'>
-                <label for="user_name">USER:</label>
-            </div>
-            <input type="text" name = "user_name" class= "w3-margin-top">
-            <br>
-            
-            <div id = 'input_rfid'>
-                <label for="rfid" >ID:</label>
-            </div>
-            <input type="text" name = 'rfid' class= "w3-margin-top">
-            <br>
-
-            <div id = 'input_money'>
-                <label for="money">MONEY:</label>
-            </div>
-            <input type="text" name = 'money' class= "w3-margin-top">
-            <br>
-            <br>
-            <div id = "button">
-                <input type = "submit" value = "Send Data">
-            </div>
-        </form>
     </div>
 </body>
 </html>

@@ -5,11 +5,16 @@ table
         th RFID
         th MONEY
         th DETAIL
+        th DELETE
+    - var stt = 0
     each item in list
+        - var stt = stt + 1 + ''
         tr
-            td= item.ID
+            td= stt
             td= item.USER_NAME
             td= item.RFID
             td= item.MONEY
             td
                 a(href='/customer/'+ item.ID) DETAIL
+            td
+                a(href='/table/delete/' + item.ID) DELETE
